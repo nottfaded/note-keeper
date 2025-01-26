@@ -7,8 +7,7 @@ export default function Auth() {
 
   return (
     <div className={styles.authContainer}>
-      <h1>Log in</h1>
-      <GoogleButton onClick={googleLogin} />
+      <GoogleButton type='light' className='google-button' onClick={googleLogin} />
     </div>
   );
 } 

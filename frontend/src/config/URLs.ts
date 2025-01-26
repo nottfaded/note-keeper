@@ -1,1 +1,1 @@
-export const API_URL = "http://localhost:5024/api"
+export const AUTH_API = "http://localhost:5001/api"

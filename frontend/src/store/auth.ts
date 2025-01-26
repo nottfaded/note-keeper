@@ -1,6 +1,6 @@
 import { atom, useSetAtom } from 'jotai';
 import axios from 'axios';
-import { API_URL } from '../config/URLs';
+import { AUTH_API } from '../config/URLs';
 
 interface User {
   email: string;
@@ -24,7 +24,7 @@ export function useAuth() {
   const checkAuth = async () => {
     setAuthState((prev) => ({ ...prev, isLoading: true }));
     try {
-      const response = await axios.get(`${API_URL}/auth/check`, { withCredentials: true });
+      const response = await axios.get(`${AUTH_API}/auth/check`, { withCredentials: true });
       setAuthState({ user: response.data, isAuthenticated: true, isLoading: false });
     } catch {
       setAuthState({ user: null, isAuthenticated: false, isLoading: false });
@@ -34,7 +34,7 @@ export function useAuth() {
   const logout = async () => {
     setAuthState((prev) => ({ ...prev, isLoading: true }));
     try {
-      await axios.get(`${API_URL}/auth/logout`, { withCredentials: true });
+      await axios.get(`${AUTH_API}/auth/logout`, { withCredentials: true });
       setAuthState({ user: null, isAuthenticated: false, isLoading: false });
     } catch (error) {
       console.error('Logout error:', error);
@@ -42,7 +42,7 @@ export function useAuth() {
   };
 
   const googleLogin = () => {
-    window.location.href = `${API_URL}/auth/googleLogin`;
+    window.location.href = `${AUTH_API}/auth/googleLogin`;
   };
 
   return { checkAuth, logout, googleLogin };

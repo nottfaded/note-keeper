@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "backend", "backend.csproj", "{08F4522D-2D9E-4753-892A-F13EAB479D1E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthService", "AuthService\AuthService.csproj", "{8D755A24-2D26-4479-BB36-6D86DE8905C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseCore", "DatabaseCore\DatabaseCore.csproj", "{223B7A4B-2F1C-45BF-B6DA-C18E6D01E433}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{08F4522D-2D9E-4753-892A-F13EAB479D1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08F4522D-2D9E-4753-892A-F13EAB479D1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08F4522D-2D9E-4753-892A-F13EAB479D1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08F4522D-2D9E-4753-892A-F13EAB479D1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D755A24-2D26-4479-BB36-6D86DE8905C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D755A24-2D26-4479-BB36-6D86DE8905C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D755A24-2D26-4479-BB36-6D86DE8905C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D755A24-2D26-4479-BB36-6D86DE8905C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{223B7A4B-2F1C-45BF-B6DA-C18E6D01E433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{223B7A4B-2F1C-45BF-B6DA-C18E6D01E433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{223B7A4B-2F1C-45BF-B6DA-C18E6D01E433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{223B7A4B-2F1C-45BF-B6DA-C18E6D01E433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
