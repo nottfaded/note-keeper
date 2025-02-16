@@ -5,4 +5,12 @@
   justify-content: center;
   min-height: 100vh;
   gap: 20px;
+
+  .alertComponent {
+    position: absolute;
+    top: rem(10);
+    background-color: var(--error);
+    padding: rem(10);
+    border-radius: rem(10);
+  }
 }
