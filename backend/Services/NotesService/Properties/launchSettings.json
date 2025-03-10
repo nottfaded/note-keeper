@@ -14,17 +14,18 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7282;http://localhost:5002"
+      "applicationUrl": "https://localhost:6002;http://localhost:5002"
     },
     "Container (Dockerfile)": {
       "commandName": "Docker",
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
       "environmentVariables": {
-        "ASPNETCORE_HTTPS_PORTS": "8081",
-        "ASPNETCORE_HTTP_PORTS": "8080"
+        "ASPNETCORE_HTTPS_PORTS": "6002",
+        "ASPNETCORE_HTTP_PORTS": "5002"
       },
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": true,
+      "httpPort": 5002
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json"

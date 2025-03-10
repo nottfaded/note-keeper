@@ -4,11 +4,8 @@
     "Projects": [
       {
         "Path": "Services\\AuthService\\AuthService.csproj",
-        "Action": "Start"
-      },
-      {
-        "Path": "Services\\NotesService\\NotesService.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": "Container (Dockerfile)"
       }
     ]
   }

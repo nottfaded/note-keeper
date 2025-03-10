@@ -50,7 +50,7 @@ export function useAuthStore() {
     }
 
     try {
-      const response = await axiosToken.get(`${AUTH_API}/auth/check`);
+      const response = await axiosToken.get(`${AUTH_API}/check`);
 
       setAuthState({ 
         isLoading: false,
@@ -99,7 +99,7 @@ export function useAuthStore() {
   };
 
   const googleLogin = () => {
-    window.location.href = `${AUTH_API}/auth/googleLogin`;
+    window.location.href = `${AUTH_API}/googleLogin`;
   };
 
   return { checkAuth, logout, googleLogin };

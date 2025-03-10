@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 5001
+EXPOSE 5501
 
-FROM mcr.microsoft.com/dotnet/sdk:9.0-windowsservercore-ltsc2022 AS build
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS build
 WORKDIR /src
 
 COPY ["Services/AuthService/AuthService.csproj", "AuthService/"]
