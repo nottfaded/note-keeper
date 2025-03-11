@@ -6,10 +6,11 @@ public class MongoDbContext
 {
     private readonly IMongoDatabase _database;
 
-    public MongoDbContext()
+    public MongoDbContext(string? testConnection = null)
     {
         var isRunningInContainer = Environment.GetEnvironmentVariable("DOTNET_RUNNING_IN_CONTAINER") == "true";
-        var connection = isRunningInContainer ? "mongodb://host.docker.internal:27017" : "mongodb://localhost:27017";
+        var connection = testConnection ?? (isRunningInContainer ? "mongodb://host.docker.internal:27017" : "mongodb://localhost:27017");
+
         var client = new MongoClient(connection);
         _database = client.GetDatabase("NotesApp");
     }

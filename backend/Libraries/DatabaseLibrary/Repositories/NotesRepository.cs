@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace DatabaseLibrary.Repositories;
 
-internal class NoteRepository(MongoDbContext context) : INoteRepository
+public class NotesRepository(MongoDbContext context) : INotesRepository
 {
     private readonly IMongoCollection<Note> _notes = context.GetCollection<Note>("notes");
 

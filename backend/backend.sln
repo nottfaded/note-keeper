@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesService", "Services\No
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9D3AFA66-9D38-4783-B63B-C493EB9B4414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotesService.Test", "Tests\NotesService.Test\NotesService.Test.csproj", "{8433FB83-2BA7-48F1-91A8-92C48ACA4070}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +47,10 @@ Global
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8433FB83-2BA7-48F1-91A8-92C48ACA4070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8433FB83-2BA7-48F1-91A8-92C48ACA4070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8433FB83-2BA7-48F1-91A8-92C48ACA4070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8433FB83-2BA7-48F1-91A8-92C48ACA4070}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +60,7 @@ Global
 		{6E4DD070-F42A-E8DF-4516-A350BB69DB47} = {2DA26A02-1CE5-4147-A398-3396E9EB95A9}
 		{16FD9863-A745-7DF3-D0FD-B69A0BD39998} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{7ECF15EF-93C7-DBCD-3314-3E0A1E586709} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{8433FB83-2BA7-48F1-91A8-92C48ACA4070} = {9D3AFA66-9D38-4783-B63B-C493EB9B4414}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {177BA3CB-81BF-49D9-AF8C-237F325FEED1}

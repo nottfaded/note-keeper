@@ -8,7 +8,7 @@ namespace AuthService.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class NotesController(INoteRepository noteRepo, IUserRepository userRepo) : ControllerBase
+public class NotesController(INotesRepository noteRepo, IUserRepository userRepo) : ControllerBase
 {
     [Authorize]
     [HttpPost("add")]

@@ -2,7 +2,7 @@
 
 namespace DatabaseLibrary.Interfaces;
 
-public interface INoteRepository
+public interface INotesRepository
 {
     public Task AddNoteAsync(Note note);
     public Task<IEnumerable<Note>> GetNotesByUserIdAsync(string userId);

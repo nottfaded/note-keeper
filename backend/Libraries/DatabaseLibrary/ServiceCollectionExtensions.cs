@@ -10,7 +10,7 @@ public static class ServiceCollectionExtensions
     {
         services.AddSingleton<MongoDbContext>();
         services.AddScoped<IUserRepository, UserRepository>();
-        services.AddScoped<INoteRepository, NoteRepository>();
+        services.AddScoped<INotesRepository, NotesRepository>();
 
         return services;
     }
